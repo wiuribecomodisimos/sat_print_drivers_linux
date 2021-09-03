@@ -1,0 +1,463 @@
+*PPD-Adobe: "4.3"
+*cupsLanguages: "zh"
+*%%%% PPD file for POS80 with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v1.5.3.
+*FormatVersion: "4.3"
+*FileVersion: "1.2.1"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "SAT23TUSE.ppd"
+*Product: "(SAT23TUSE)"
+*Manufacturer: "SAT"
+*ModelName: "SAT23TUSE"
+*ShortNickName: "POS80F"
+*NickName: "SAT SAT23TUSE, 1.2.1"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.5
+*cupsModelNumber: 4096
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 100 rastertohprt"
+
+*UIConstraints: *PostPrintAction 0 *CutMode 1
+*UIConstraints: *PostPrintAction 1 *CutMode 1
+
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 5
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 10
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 15
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 20
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 25
+*UIConstraints: *PostPrintAction 0 *CutPaperLength 30
+
+
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 5 
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 10
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 15
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 20
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 25
+*UIConstraints: *PostPrintAction 0 *FormfeedLength 30
+
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 5
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 10
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 15
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 20
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 25
+*UIConstraints: *PostPrintAction 1 *CutPaperLength 30
+
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 5 
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 10
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 15
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 20
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 25
+*UIConstraints: *PostPrintAction 2 *FormfeedLength 30
+
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 5 
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 10
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 15
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 20
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 25
+*UIConstraints: *PostPrintAction 3 *FormfeedLength 30
+
+*UIConstraints: *BeepControl 0 *BeepDuration 1
+*UIConstraints: *BeepControl 0 *BeepDuration 2
+*UIConstraints: *BeepControl 0 *BeepDuration 3
+*UIConstraints: *BeepControl 0 *BeepDuration 4
+*UIConstraints: *BeepControl 0 *BeepDuration 5
+*UIConstraints: *BeepControl 0 *BeepDuration 6
+
+*UIConstraints: *BeepControl 0 *BeepInterval 1
+*UIConstraints: *BeepControl 0 *BeepInterval 2
+*UIConstraints: *BeepControl 0 *BeepInterval 3
+*UIConstraints: *BeepControl 0 *BeepInterval 4
+*UIConstraints: *BeepControl 0 *BeepInterval 5
+*UIConstraints: *BeepControl 0 *BeepInterval 6
+
+
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepDuration 1
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepDuration 2
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepDuration 3
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepDuration 4
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepDuration 5
+
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepInterval 1
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepInterval 2
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepInterval 3
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepInterval 4
+*UIConstraints: *ExternalBeepControl 0 *ExternalBeepInterval 5
+
+*MaxMediaWidth: "227"
+*MaxMediaHeight: "8500"
+*HWMargins: 0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 56 227
+*ParamCustomPageSize Height: 2 points 28 8500
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*RequiresPageRegion All: True
+
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: Roll80mm
+*PageSize Roll80mm/Paper roll 80 x 297 mm: "<</PageSize[204 842]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: Roll80mm
+*PageRegion Roll80mm/Paper roll 80mm (3 inches): "<</PageSize[204 842]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: Roll80mm
+*ImageableArea Roll80mm/Paper roll 80mm (3 inches): "0 0 204 842"
+*DefaultPaperDimension: Roll80mm
+*PaperDimension Roll80mm/Paper roll 80mm (3 inches): "204 842"
+
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 203x203dpi
+*Resolution 203x203dpi/203 x 203 dpi: "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *PostPrintAction/Post-Print Action: PickOne
+*OrderDependency: 10 AnySetup *PostPrintAction
+*DefaultPostPrintAction: 2
+*PostPrintAction 0/None : ""
+*PostPrintAction 1/Auto Feed Paper  : ""
+*PostPrintAction 2/Auto Cut Paper : ""
+*PostPrintAction 3/Auto Cut Each Page : ""
+
+*CloseUI: *PostPrintAction
+
+*OpenUI *CutMode/Cut Mode: PickOne
+*OrderDependency: 10 AnySetup *CutMode
+*DefaultCutMode: 1
+*CutMode 0/None : ""
+*CutMode 1/Partial Cut : ""
+
+*CloseUI: *CutMode
+
+*OpenUI *FormfeedLength/Feed Paper Length: PickOne
+*OrderDependency: 11 AnySetup *FormfeedLength
+*DefaultFormfeedLength: 0
+*FormfeedLength 0/0.0cm: ""
+*FormfeedLength 5/0.5cm: ""
+*FormfeedLength 10/1.0cm: ""
+*FormfeedLength 15/1.5cm: ""
+*FormfeedLength 20/2.0cm: ""
+*FormfeedLength 25/2.5cm: ""
+*FormfeedLength 30/3.0cm: ""
+
+*CloseUI: *FormfeedLength
+
+*OpenUI *CutPaperLength/Cut Paper Length: PickOne
+*OrderDependency: 11 AnySetup *CutPaperLength
+*DefaultCutPaperLength: 0
+*CutPaperLength 0/0.0cm : ""
+*CutPaperLength 5/0.5cm : ""
+*CutPaperLength 10/1.0cm : ""
+*CutPaperLength 15/1.5cm : ""
+*CutPaperLength 20/2.0cm : ""
+*CutPaperLength 25/2.5cm : ""
+*CutPaperLength 30/3.0cm : ""
+
+*CloseUI: *CutPaperLength
+
+*CloseGroup: General
+
+*OpenGroup: PaperSaveControl/Paper Save Control
+
+*OpenUI *PaperSaveBottom/Paper Save Bottom: PickOne
+*OrderDependency: 11 AnySetup *PaperSaveBottom
+*DefaultPaperSaveBottom: 1
+*PaperSaveBottom 0/NO: ""
+*PaperSaveBottom 1/YES: ""
+*CloseUI: *PaperSaveBottom
+
+*OpenUI *PaperSaveMode/Paper Save Mode: PickOne
+*OrderDependency: 11 AnySetup *PaperSaveMode
+*DefaultPaperSaveMode: 0
+*PaperSaveMode 0/None: ""
+*PaperSaveMode 1/25%: ""
+*PaperSaveMode 2/50%: ""
+*PaperSaveMode 3/75%: ""
+*CloseUI: *PaperSaveMode
+
+*CloseGroup: PaperSaveControl
+
+*OpenGroup: BuzzerControl/Buzzer Control
+
+*%Buzzer settings.
+*OpenUI *BeepControl/Beep Control: PickOne
+*OrderDependency: 11 AnySetup *BeepControl
+*DefaultBeepControl: 0
+*BeepControl 0/None: ""
+*BeepControl 1/Before Print: ""
+*BeepControl 2/After Print: ""
+*CloseUI: *BeepControl
+
+*%Sound pattern settings.
+*OpenUI *BeepDuration/Beep Duration: PickOne
+*OrderDependency: 11 AnySetup *BeepDuration
+*DefaultBeepDuration: 0
+*BeepDuration 0/0.0s: ""
+*BeepDuration 1/0.5s: ""
+*BeepDuration 2/1.0s: ""
+*BeepDuration 3/1.5s: ""
+*BeepDuration 4/2.0s: ""
+*BeepDuration 5/2.5s: ""
+*BeepDuration 6/3.0s: ""
+
+*CloseUI: *BeepDuration
+
+*%Sound pattern settings.
+*OpenUI *BeepInterval/Beep Interval: PickOne
+*OrderDependency: 11 AnySetup *BeepInterval
+*DefaultBeepInterval: 0
+*BeepInterval 0/0.0s: ""
+*BeepInterval 1/0.5s: ""
+*BeepInterval 2/1.0s: ""
+*BeepInterval 3/1.5s: ""
+*BeepInterval 4/2.0s: ""
+*BeepInterval 5/2.5s: ""
+*BeepInterval 6/3.0s: ""
+
+*CloseUI: *BeepInterval
+
+*%Buzzer repeat settings.
+*OpenUI *BeepRepeat/Beep Repeat: PickOne
+*OrderDependency: 11 AnySetup *BeepRepeat
+*DefaultBeepRepeat: 1
+*BeepRepeat 1/1: ""
+*BeepRepeat 2/2: ""
+*BeepRepeat 3/3: ""
+*BeepRepeat 4/4: ""
+*BeepRepeat 5/5: ""
+*CloseUI: *BeepRepeat
+
+*CloseGroup: BuzzerControl
+
+*OpenGroup: ExternalBuzzerControl/External Buzzer Control
+
+*%Buzzer settings.
+*OpenUI *ExternalBeepControl/External Beep Control: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepControl
+*DefaultExternalBeepControl: 0
+*ExternalBeepControl 0/None: ""
+*ExternalBeepControl 1/Before Print: ""
+*ExternalBeepControl 2/After Print: ""
+*CloseUI: *ExternalBeepControl
+
+*%Sound pattern settings.
+*OpenUI *ExternalBeepDuration/External Beep Duration: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepDuration
+*DefaultExternalBeepDuration: 0
+*ExternalBeepDuration 0/0.0s: ""
+*ExternalBeepDuration 1/0.1s: ""
+*ExternalBeepDuration 2/0.2s: ""
+*ExternalBeepDuration 3/0.3s: ""
+*ExternalBeepDuration 4/0.4s: ""
+*ExternalBeepDuration 5/0.5s: ""
+
+*CloseUI: *ExternalBeepDuration
+
+*%Sound pattern settings.
+*OpenUI *ExternalBeepInterval/External Beep Interval: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepInterval
+*DefaultExternalBeepInterval: 0
+*ExternalBeepInterval 0/0.0s: ""
+*ExternalBeepInterval 1/0.1s: ""
+*ExternalBeepInterval 2/0.2s: ""
+*ExternalBeepInterval 3/0.3s: ""
+*ExternalBeepInterval 4/0.4s: ""
+*ExternalBeepInterval 5/0.5s: ""
+
+*CloseUI: *ExternalBeepInterval
+
+*%Buzzer repeat settings.
+*OpenUI *ExternalBeepRepeat/External Beep Repeat: PickOne
+*OrderDependency: 11 AnySetup *ExternalBeepRepeat
+*DefaultExternalBeepRepeat: 1
+*ExternalBeepRepeat 1/1: ""
+*ExternalBeepRepeat 2/2: ""
+*ExternalBeepRepeat 3/3: ""
+*ExternalBeepRepeat 4/4: ""
+*ExternalBeepRepeat 5/5: ""
+*CloseUI: *ExternalBeepRepeat
+
+*CloseGroup: ExternalBuzzerControl
+
+
+*OpenGroup: CashDrawerControl/Cash Drawer Control
+
+*%Drawer settings.
+*OpenUI *Drawer1/Drawer#1: PickOne
+*OrderDependency: 11 AnySetup *Drawer1
+*DefaultDrawer1: 0
+*Drawer1 0/None: ""
+*Drawer1 1/Open Before Print: ""
+*Drawer1 2/Open After Print: ""
+*CloseUI: *Drawer1
+
+*CloseGroup: CashDrawerControl
+
+*%OpenGroup: DataCompression/Data Compression
+
+*%Compression settings.
+*%OpenUI *BitmapCompression/Bitmap Compression: PickOne
+*%OrderDependency: 11 AnySetup *BitmapCompression
+*%DefaultBitmapCompression: 0
+*%BitmapCompression 0/NO: ""
+*%BitmapCompression 1/YES: ""
+*%CloseUI: *BitmapCompression
+
+*%CloseGroup: DataCompression
+
+
+
+*DefaultFont: Courier
+*% End of POS80.ppd, 13060 bytes.
+*% Chinese localization
+*zh.Translation ModelName/SAT23TUSE: ""
+*zh.Translation General/基本设置: ""
+*zh.Translation PageSize/纸张尺寸: ""
+*zh.PageSize Roll80mm/80 x 297 毫米: ""
+*zh.Translation PageRegion/Media Size: ""
+*zh.PageRegion Roll80mm/卷纸 80mm (3 inches): ""
+*zh.Translation Resolution/分辨率: ""
+*zh.Resolution 203x203dpi/203 x 203 dpi: ""
+*zh.Translation PostPrintAction/打印后操作: ""
+*zh.PostPrintAction 0/无 : ""
+*zh.PostPrintAction 1/自动进纸  : ""
+*zh.PostPrintAction 2/自动切纸  : ""
+*zh.PostPrintAction 3/每页自动切纸  : ""
+
+*zh.Translation CutMode/切刀模式: ""
+*zh.CutMode 0/无: ""
+*zh.CutMode 1/局部切刀: ""
+*zh.CutMode 2/全切刀: ""
+
+*zh.Translation FormfeedLength/进纸长度: ""
+*zh.FormfeedLength 0/0.0厘米: ""
+*zh.FormfeedLength 5/0.5厘米: ""
+*zh.FormfeedLength 10/1.0厘米: ""
+*zh.FormfeedLength 15/1.5厘米: ""
+*zh.FormfeedLength 20/2.0厘米: ""
+*zh.FormfeedLength 25/2.5厘米: ""
+*zh.FormfeedLength 30/3.0厘米: ""
+*zh.Translation CutPaperLength/切纸长度: ""
+*zh.CutPaperLength 0/0.0厘米 : ""
+*zh.CutPaperLength 5/0.5厘米 : ""
+*zh.CutPaperLength 10/1.0厘米 : ""
+*zh.CutPaperLength 15/1.5厘米 : ""
+*zh.CutPaperLength 20/2.0厘米 : ""
+*zh.CutPaperLength 25/2.5厘米 : ""
+*zh.CutPaperLength 30/3.0厘米 : ""
+
+*zh.Translation PaperSaveControl/省纸设置: ""
+*zh.Translation PaperSaveBottom/底部省纸: ""
+*zh.PaperSaveBottom 0/否: ""
+*zh.PaperSaveBottom 1/是: ""
+*zh.Translation PaperSaveMode/省纸比例: ""
+*zh.PaperSaveMode 0/无: ""
+*zh.PaperSaveMode 1/25%: ""
+*zh.PaperSaveMode 2/50%: ""
+*zh.PaperSaveMode 3/75%: ""
+*zh.Translation LogoControl/NV徽标设置: ""
+*zh.Translation PrintLogo/打印徽标: ""
+*zh.PrintLogo 0/无: ""
+*zh.PrintLogo 1/打印开始 : ""
+*zh.PrintLogo 2/打印结束: ""
+*zh.Translation LogoIndex/徽标序号: ""
+*zh.LogoIndex 0/无: ""
+*zh.LogoIndex 1/徽标0: ""
+*zh.LogoIndex 2/徽标1: ""
+*zh.LogoIndex 3/徽标2: ""
+*zh.LogoIndex 4/徽标3: ""
+*zh.LogoIndex 5/徽标4: ""
+*zh.LogoIndex 6/徽标5: ""
+*zh.LogoIndex 7/徽标6: ""
+*zh.LogoIndex 8/徽标7: ""
+*zh.LogoIndex 9/徽标8: ""
+*zh.LogoIndex 10/徽标9: ""
+*zh.Translation LogoAlign/打印位置: ""
+*zh.LogoAlign 0/自动: ""
+*zh.LogoAlign 1/左: ""
+*zh.LogoAlign 2/中: ""
+*zh.LogoAlign 3/右: ""
+*zh.Translation BuzzerControl/蜂鸣器设置: ""
+*zh.Translation BeepControl/蜂鸣器控制: ""
+*zh.BeepControl 0/无: ""
+*zh.BeepControl 1/打印开始: ""
+*zh.BeepControl 2/打印结束: ""
+*zh.Translation BeepDuration/持续时间: ""
+*zh.BeepDuration 0/0.0秒: ""
+*zh.BeepDuration 1/0.5秒: ""
+*zh.BeepDuration 2/1.0秒: ""
+*zh.BeepDuration 3/1.5秒: ""
+*zh.BeepDuration 4/2.0秒: ""
+*zh.BeepDuration 5/2.5秒: ""
+*zh.BeepDuration 6/3.0秒: ""
+*zh.Translation BeepInterval/间隔时间: ""
+*zh.BeepInterval 0/0.0秒: ""
+*zh.BeepInterval 1/0.5秒: ""
+*zh.BeepInterval 2/1.0秒: ""
+*zh.BeepInterval 3/1.5秒: ""
+*zh.BeepInterval 4/2.0秒: ""
+*zh.BeepInterval 5/2.5秒: ""
+*zh.BeepInterval 6/3.0秒: ""
+*zh.Translation BeepRepeat/重复次数: ""
+*zh.BeepRepeat 1/1次: ""
+*zh.BeepRepeat 2/2次: ""
+*zh.BeepRepeat 3/3次: ""
+*zh.BeepRepeat 4/4次: ""
+*zh.BeepRepeat 5/5次: ""
+
+*zh.Translation ExternalBuzzerControl/外置蜂鸣器设置: ""
+*zh.Translation ExternalBeepControl/外置蜂鸣器控制: ""
+*zh.ExternalBeepControl 0/无: ""
+*zh.ExternalBeepControl 1/打印开始: ""
+*zh.ExternalBeepControl 2/打印结束: ""
+
+*zh.Translation ExternalBeepDuration/持续时间: ""
+*zh.ExternalBeepDuration 0/0.0秒: ""
+*zh.ExternalBeepDuration 1/0.1秒: ""
+*zh.ExternalBeepDuration 2/0.2秒: ""
+*zh.ExternalBeepDuration 3/0.3秒: ""
+*zh.ExternalBeepDuration 4/0.4秒: ""
+*zh.ExternalBeepDuration 5/0.5秒: ""
+
+*zh.Translation ExternalBeepInterval/间隔时间: ""
+*zh.ExternalBeepInterval 0/0.0秒: ""
+*zh.ExternalBeepInterval 1/0.1秒: ""
+*zh.ExternalBeepInterval 2/0.2秒: ""
+*zh.ExternalBeepInterval 3/0.3秒: ""
+*zh.ExternalBeepInterval 4/0.4秒: ""
+*zh.ExternalBeepInterval 5/0.5秒: ""
+
+*zh.Translation ExternalBeepRepeat/重复次数: ""
+*zh.ExternalBeepRepeat 1/1次: ""
+*zh.ExternalBeepRepeat 2/2次: ""
+*zh.ExternalBeepRepeat 3/3次: ""
+*zh.ExternalBeepRepeat 4/4次: ""
+*zh.ExternalBeepRepeat 5/5次: ""
+
+*zh.Translation CashDrawerControl/钱箱控制: ""
+*zh.Translation Drawer1/钱箱#1: ""
+*zh.Drawer1 0/无: ""
+*zh.Drawer1 1/打印前自动弹出: ""
+*zh.Drawer1 2/打印后自动弹出: ""
+*zh.Translation Drawer2/钱箱#2: ""
+*zh.Drawer2 0/无: ""
+*zh.Drawer2 1/打印前自动弹出: ""
+*zh.Drawer2 2/打印后自动弹出: ""
